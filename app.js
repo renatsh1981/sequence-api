@@ -54,7 +54,6 @@ export const app = function(req, res){
                 res.end();
                 },
             error => {
-                console.log("sdfdsf");
                 res.statusCode = 500;
                 res.setHeader('Content-Type', 'application/json');
                 var response = {"error": error.message}
